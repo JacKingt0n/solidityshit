@@ -1,0 +1,26 @@
+// Solidity  - need to get balance
+pragma solidity ^0.6.8;	
+
+// creation..
+contract MyContract
+{
+	// private state variable
+	address private owner;
+
+	// Define constructor
+	constructor() public{
+		owner=msg.sender;
+	}
+
+	// get address of owner
+	function getOwner(
+	) public view returns (address) {	
+		return owner;
+	}
+
+	// return current balance of owner
+	function getBalance(
+	) public view returns(uint256){
+		return owner.balance;
+	}
+}
