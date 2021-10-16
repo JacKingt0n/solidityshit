@@ -1,2 +1,3 @@
 # solidityshit
-nothing
+
+testing a contract function(s)
